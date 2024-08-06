@@ -7,7 +7,7 @@
  <!--
 
 
- var z= 85;
+ var z= 84;
  quotes = new Array(z);
  quotes[0] = "Zecken"
  quotes[1] = "Zicken"
@@ -93,7 +93,11 @@
  quotes[81] = "Bei Musik mitklatschende Leute"
  quotes[82] = "Glücksnüsse"
  quotes[83] = "Umweltzonen"
- quotes[84] = "Plastikdeckel die an der Flasche verbleiben"
+
+
+
+
+  
 
 
  //-->
@@ -111,8 +115,8 @@
 			 <td align="center" valign="middle"><script language="JavaScript"> 
   <!--
  var jetzt=new Date();
- var zz=((jetzt.getSeconds()+jetzt.getMinutes()*60)*1000+jetzt.getMilliseconds())%z;
- document.write("<font face='Helvetica' color=white size=36>" + quotes[zz] +"</font>");
+ var z=(jetzt.getSeconds()+jetzt.getMinutes()*60)%84;
+ document.write("<font face='Helvetica' color=white size=36>" + quotes[z] +"</font>");
  //-->
  </script>
  </td>
